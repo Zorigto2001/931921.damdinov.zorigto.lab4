@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+@media (max-width: 1000px) {
+    .container_right_column {
+      display: none !important;
+    }
+    main{
+        justify-content: space-around;
+    }
+}
+@media (max-width: 570px) {
+    main{
+        flex-direction: column;
+    }
+    li{
+        white-space: nowrap;
+        max-width: 720px !important;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .container{
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+}
+
+header{
+    background: #4c77a9;
+    height: 50px;
+    align-items:center;
+    justify-content:left;
+    padding-left: 20%;
+    display: flex;
+}
+main{
+    background: #edeef0;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    min-height: calc(100vh - 90px);
+    position: relative;
+    align-items: flex-start;
+}
+footer{
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+}
+
+
+/* left in main*/
+.list{
+    margin: 0;
+    align-items: center;
+    font-size: 15px;
+    min-height: 100%;
+
+}
+li{
+    padding: 7px 0 7px 5px;
+    color: #507299;
+    list-style-type: none;
+    max-width: 158px;
+}
+li:hover{
+    background: #9c9a9a3d;
+}
+
+/* mid in main*/
+.text{
+    color: black;
+    font-size: 13px;
+    text-align: justify;
+}
+.text::selection{
+    background-color: #9c9a9a3d;
+    color: green;
+}
+hr{
+    border-color: #9c9a9a3d;
+    background-color: #9c9a9a3d;
+    margin: 5px 0;
+}
+.like-comment{
+    justify-content: space-between;
+    display: flex;
+}
+.container_post img{/*cat img*/
+    width: 100%;
+}
+.container_flex{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    margin-left: 20px;
+    gap: 20px;
+
+}
+.container_border{
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px #9c9a9a3d;
+}
+.container_post{
+    background: white;
+    width: 340px;
+    padding: 10px;
+}
+
+/* right  in main*/
+.right_column{
+    background-color: white;
+    padding:18px 8px;
+    width: 115px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.text_right_column{
+    color: black;
+    font-size: 13px;
+    background-color: #9c9a9a3d;
+}
+.container_right_column{
+    
+    gap:15px;
+    margin-left: 150px;
+    position: sticky;
+    top: 0px;
+}
+
